@@ -144,3 +144,7 @@ O projeto utiliza o padrão **Page Object Model (POM)**:
 **Moreno Barros Reis**  
 QA Automation Engineer  
 [https://www.linkedin.com/in/morenoreis/](#) • [GitHub](#)
+
+
+
+
