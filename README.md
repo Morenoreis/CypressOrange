@@ -17,6 +17,9 @@ Desenvolvido como portfólio prático de QA Automation com foco em boas prática
 
 ## 📁 Estrutura do Projeto
 
+## 📁 Estrutura do Projeto
+
+```
 CypressOrange/
 ├── cypress/
 │   ├── e2e/
