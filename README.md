@@ -145,7 +145,8 @@ O projeto utiliza o padrão **Page Object Model (POM)**:
 **Moreno Barros Reis**  
 QA Automation Engineer  
 
-Linkedin: [https://www.linkedin.com/in/morenoreis/](#) •GitHub: [https://github.com/Morenoreis/CypressOrange](#)
+• Linkedin: [https://www.linkedin.com/in/morenoreis/](#) 
+• GitHub: [https://github.com/Morenoreis/CypressOrange](#)
 
 
 
