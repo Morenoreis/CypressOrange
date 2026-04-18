@@ -1,4 +1,4 @@
-# CypressOrange 🍊
+# CypressOrange
 
 Projeto de automação de testes E2E utilizando **Cypress** no site de demonstração do [OrangeHRM](https://opensource-demo.orangehrmlive.com).
 
