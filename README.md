@@ -6,7 +6,7 @@ Desenvolvido como portfólio prático de QA Automation com foco em boas prática
 
 ---
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - [Cypress](https://www.cypress.io/) v15+
 - JavaScript
@@ -15,7 +15,7 @@ Desenvolvido como portfólio prático de QA Automation com foco em boas prática
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 CypressOrange/
@@ -48,41 +48,41 @@ CypressOrange/
 
 ---
 
-## ✅ Cobertura de Testes
+## Cobertura de Testes
 
-### 🔐 Autenticação
+###  Autenticação
 - Login válido
 - Login inválido (credenciais erradas)
 - Login inválido (campos obrigatórios)
 - Logout funcional
 
-### 🧭 Navegação
+###  Navegação
 - Menu lateral automatizado
 - Validação de visibilidade dos menus
 - Navegação entre módulos
 
-### 👤 Admin → User Management
+###  Admin → User Management
 - Acesso ao módulo Admin
 - Validação do título da página
 - Busca de usuário existente
 - Busca de usuário inexistente (No Records Found)
 - Validação de colunas da tabela
 
-### 👥 PIM → Employee List
+###  PIM → Employee List
 - Acesso ao módulo PIM
 - Listagem de colaboradores
 - Validação de colunas da tabela
 - Busca por nome existente
 - Busca por nome inexistente (zero registros)
 
-### 🏖️ Leave → Solicitação de Férias
+###  Leave → Solicitação de Férias
 - Acesso ao módulo Leave
 - Navegação para Apply Leave
 - Validação do formulário com campos obrigatórios
 - Navegação para My Leave List
 - Validação de colunas da tabela
 
-### 💼 Recruitment → Job Vacancies
+###  Recruitment → Job Vacancies
 - Acesso ao módulo Recruitment
 - Navegação para Job Vacancies
 - Listagem de vagas
@@ -91,7 +91,7 @@ CypressOrange/
 
 ---
 
-## 🚀 Como Executar
+##  Como Executar
 
 ### Pré-requisitos
 - Node.js 18+
@@ -121,7 +121,7 @@ npx cypress run --spec "cypress/e2e/admin.cy.js"
 
 ---
 
-## 🏗️ Arquitetura
+##  Arquitetura
 
 O projeto utiliza o padrão **Page Object Model (POM)**:
 
@@ -132,7 +132,7 @@ O projeto utiliza o padrão **Page Object Model (POM)**:
 
 ---
 
-## 📌 Observações
+##  Observações
 
 - O site de demonstração reseta os dados periodicamente
 - Alguns testes de Leave dependem de massa de dados disponível no ambiente
@@ -140,11 +140,13 @@ O projeto utiliza o padrão **Page Object Model (POM)**:
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
 **Moreno Barros Reis**  
 QA Automation Engineer  
-[https://www.linkedin.com/in/morenoreis/](#) • [GitHub](#)
+
+Linkedin: [https://www.linkedin.com/in/morenoreis/](#) 
+GitHub: [https://github.com/Morenoreis/CypressOrange](#)
 
 
 
