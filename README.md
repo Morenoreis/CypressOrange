@@ -1,12 +1,12 @@
 # CypressOrange
 
-Projeto de automação de testes E2E utilizando **Cypress** no site de demonstração do [OrangeHRM](https://opensource-demo.orangehrmlive.com).
+End-to-end test automation project using **Cypress** on the [OrangeHRM](https://opensource-demo.orangehrmlive.com) demo website.
 
-Desenvolvido como portfólio prático de QA Automation com foco em boas práticas, arquitetura limpa e cobertura de módulos reais de um sistema RH.
+Built as a practical QA Automation portfolio focused on best practices, clean architecture, and real module coverage of an HR system.
 
 ---
 
-## Tecnologias
+##  Tech Stack
 
 - [Cypress](https://www.cypress.io/) v15+
 - JavaScript
@@ -15,9 +15,8 @@ Desenvolvido como portfólio prático de QA Automation com foco em boas prática
 
 ---
 
-## Estrutura do Projeto
+##  Project Structure
 
-```
 CypressOrange/
 ├── cypress/
 │   ├── e2e/
@@ -48,106 +47,102 @@ CypressOrange/
 
 ---
 
-## Cobertura de Testes
+##  Test Coverage
 
-###  Autenticação
-- Login válido
-- Login inválido (credenciais erradas)
-- Login inválido (campos obrigatórios)
-- Logout funcional
+###  Authentication
+- Valid login
+- Invalid login (wrong credentials)
+- Invalid login (empty required fields)
+- Functional logout
 
-###  Navegação
-- Menu lateral automatizado
-- Validação de visibilidade dos menus
-- Navegação entre módulos
+###  Navigation
+- Side menu automation
+- Menu item visibility validation
+- Navigation between modules
 
 ###  Admin → User Management
-- Acesso ao módulo Admin
-- Validação do título da página
-- Busca de usuário existente
-- Busca de usuário inexistente (No Records Found)
-- Validação de colunas da tabela
+- Access to Admin module
+- Page title validation
+- Search for existing user
+- Search for non-existing user (No Records Found)
+- Table column validation
 
 ###  PIM → Employee List
-- Acesso ao módulo PIM
-- Listagem de colaboradores
-- Validação de colunas da tabela
-- Busca por nome existente
-- Busca por nome inexistente (zero registros)
+- Access to PIM module
+- Employee list display
+- Table column validation
+- Search by existing name
+- Search by non-existing name (zero records)
 
-###  Leave → Solicitação de Férias
-- Acesso ao módulo Leave
-- Navegação para Apply Leave
-- Validação do formulário com campos obrigatórios
-- Navegação para My Leave List
-- Validação de colunas da tabela
+###  Leave → Leave Request
+- Access to Leave module
+- Navigation to Apply Leave page
+- Form fields validation
+- Navigation to My Leave List
+- Table column validation
 
 ###  Recruitment → Job Vacancies
-- Acesso ao módulo Recruitment
-- Navegação para Job Vacancies
-- Listagem de vagas
-- Validação de colunas da tabela
-- Filtro por status Closed
+- Access to Recruitment module
+- Navigation to Job Vacancies
+- Vacancy list display
+- Table column validation
+- Filter by Closed status
 
 ---
 
-##  Como Executar
+##  Getting Started
 
-### Pré-requisitos
+### Prerequisites
 - Node.js 18+
 - npm
 
-### Instalação
+### Installation
 ```bash
-git clone https://github.com/seu-usuario/CypressOrange.git
+git clone https://github.com/Morenoreis/CypressOrange.git
 cd CypressOrange
 npm install
 ```
 
-### Executar com interface gráfica
+### Run with UI
 ```bash
 npx cypress open --browser electron
 ```
 
-### Executar em modo headless
+### Run headless
 ```bash
 npx cypress run
 ```
 
-### Executar um spec específico
+### Run a specific spec
 ```bash
 npx cypress run --spec "cypress/e2e/admin.cy.js"
 ```
 
 ---
 
-##  Arquitetura
+##  Architecture
 
-O projeto utiliza o padrão **Page Object Model (POM)**:
+This project follows the **Page Object Model (POM)** pattern:
 
-- Cada módulo tem seu próprio Page Object em `cypress/support/`
-- Os seletores ficam centralizados no objeto `elements` de cada Page
-- O comando customizado `cy.loginViaFixture()` centraliza o login em todos os testes
-- As credenciais ficam isoladas em `cypress/fixtures/users.json`
-
----
-
-##  Observações
-
-- O site de demonstração reseta os dados periodicamente
-- Alguns testes de Leave dependem de massa de dados disponível no ambiente
-- Projeto em evolução — próximas fases incluirão Selenium e Playwright
+- Each module has its own Page Object under `cypress/support/`
+- Selectors are centralized in the `elements` object of each Page
+- The custom command `cy.loginViaFixture()` centralizes login across all tests
+- Credentials are isolated in `cypress/fixtures/users.json`
 
 ---
 
-##  Autor
+##  Notes
 
-**Moreno Barros Reis**  
-QA Automation Engineer  
+- The demo site resets data periodically
+- Some Leave tests depend on data availability in the environment
+- Project is evolving — next phases will include Selenium and Playwright
 
-• Linkedin: [https://www.linkedin.com/in/morenoreis/](#) 
-• GitHub: [https://github.com/Morenoreis/CypressOrange](#)
+---
 
+##  Author
 
+**Moreno Barros Reis**
+QA Automation Engineer
 
+[LinkedIn](https://www.linkedin.com/in/morenoreis/) • [GitHub](https://github.com/Morenoreis)
 
