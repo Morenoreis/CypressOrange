@@ -4,33 +4,33 @@ class LoginPage {
     passwordInput: () => cy.get('input[name="password"]'),
     loginButton: () => cy.get('button[type="submit"]'),
     errorMessage: () => cy.get('.oxd-alert-content-text'),
-  };
+  }
 
   visit() {
-    cy.visit('/auth/login');
+    cy.visit('/auth/login')
   }
 
-  fillUsername(usuario) {
-    this.elements.usernameInput().clear().type(usuario);
+  fillUsername(username) {
+    this.elements.usernameInput().clear().type(username)
   }
 
-  fillPassword(senha) {
-    this.elements.passwordInput().clear().type(senha);
+  fillPassword(password) {
+    this.elements.passwordInput().clear().type(password)
   }
 
   submitLogin() {
-    this.elements.loginButton().click();
+    this.elements.loginButton().click()
   }
 
-  login(usuario, senha) {
-    this.fillUsername(usuario);
-    this.fillPassword(senha);
-    this.submitLogin();
+  login(username, password) {
+    this.fillUsername(username)
+    this.fillPassword(password)
+    this.submitLogin()
   }
 
   getErrorMessage() {
-    return this.elements.errorMessage();
+    return this.elements.errorMessage()
   }
 }
 
-module.exports = LoginPage;
+module.exports = LoginPage
