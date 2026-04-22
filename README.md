@@ -17,6 +17,7 @@ Built as a practical QA Automation portfolio focused on best practices, clean ar
 
 ##  Project Structure
 
+```
 CypressOrange/
 ├── cypress/
 │   ├── e2e/
@@ -44,7 +45,7 @@ CypressOrange/
 ├── cypress.config.js
 ├── package.json
 └── README.md
-
+```
 ---
 
 ##  Test Coverage
