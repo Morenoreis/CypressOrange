@@ -1,3 +1,5 @@
+![CI](https://github.com/Morenoreis/CypressOrange/actions/workflows/ci.yml/badge.svg)
+
 # CypressOrange
 
 End-to-end test automation project using **Cypress** on the [OrangeHRM](https://opensource-demo.orangehrmlive.com) demo website.
@@ -137,7 +139,6 @@ This project follows the **Page Object Model (POM)** pattern:
 
 - The demo site resets data periodically
 - Some Leave tests depend on data availability in the environment
-- Project is evolving — next phases will include Selenium and Playwright
 
 ---
 
