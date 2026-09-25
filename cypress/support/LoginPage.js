@@ -11,11 +11,17 @@ class LoginPage {
   }
 
   fillUsername(username) {
-    this.elements.usernameInput().clear().type(username)
+    this.elements.usernameInput().clear()
+    if (username) {
+      this.elements.usernameInput().type(username)
+    }
   }
 
   fillPassword(password) {
-    this.elements.passwordInput().clear().type(password)
+    this.elements.passwordInput().clear()
+    if (password) {
+      this.elements.passwordInput().type(password)
+    }
   }
 
   submitLogin() {
